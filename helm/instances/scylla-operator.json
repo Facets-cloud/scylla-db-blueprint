@@ -1,0 +1,20 @@
+{
+    "disabled": false,
+    "flavor": "helm_simple",
+    "spec": {
+        "helm": {
+            "chart": "scylla-operator",
+            "repository": "https://scylla-operator-charts.storage.googleapis.com/stable",
+            "wait": true,
+            "version": "1.7.2"
+        },
+        "env": [
+            {
+                "name": "webhook.createSelfSignedCertificate",
+                "type": "static",
+                "default": "false"
+            }
+        ],
+        "values": {}
+    }
+}

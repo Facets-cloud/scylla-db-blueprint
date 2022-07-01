@@ -1,1 +1,1 @@
-# scylla-db-blueprint
+# Blueprint for ScyllaDB
