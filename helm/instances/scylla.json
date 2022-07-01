@@ -1,0 +1,55 @@
+{
+  "disabled": false,
+  "flavor": "helm_simple",
+  "spec": {
+    "helm": {
+      "chart": "scylla",
+      "repository": "https://scylla-operator-charts.storage.googleapis.com/stable",
+      "wait": true,
+      "version": "1.7.2"
+    },
+    "env": [
+      {
+        "name": "developerMode",
+        "type": "static",
+        "default": "true"
+      },
+      {
+        "name": "racks.members",
+        "type": "static",
+        "default": "1"
+      },
+      {
+        "name": "racks.storage.capacity",
+        "type": "static",
+        "default": "5Gi"
+      },
+      {
+        "name": "racks.resources.limits.cpu",
+        "type": "static",
+        "default": "1"
+      },
+      {
+        "name": "racks.resources.limits.memory",
+        "type": "static",
+        "default": "1Gi"
+      },
+      {
+        "name": "racks.resources.requests.cpu",
+        "type": "static",
+        "default": "1"
+      },
+      {
+        "name": "racks.resources.requests.memory",
+        "type": "static",
+        "default": "500Mi"
+      },
+      {
+        "name": "serviceMonitor.create",
+        "type": "static",
+        "default": "true"
+      }
+    ],
+    "values": {}
+  }
+}
