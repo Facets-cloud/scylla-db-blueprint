@@ -3,6 +3,7 @@
     "flavor": "helm_simple",
     "spec": {
         "helm": {
+            "namespace": "scylla-manager",
             "chart": "scylla-manager",
             "repository": "https://scylla-operator-charts.storage.googleapis.com/stable",
             "wait": true,
