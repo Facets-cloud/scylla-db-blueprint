@@ -2,6 +2,7 @@
   "disabled": false,
   "flavor": "helm_simple",
   "spec": {
+    "namespace": "scylla",
     "helm": {
       "chart": "scylla",
       "repository": "https://scylla-operator-charts.storage.googleapis.com/stable",
